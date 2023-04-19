@@ -13,26 +13,54 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 1rem;
 }
 
-.guide {
-	font-size: 2rem;
-	text-align: center;
-	margin: 0 20px 30px 20px;
+.hidden {
+	visibility: hidden;
 }
 
-.button {
-	padding: 10px;
-	border-radius: 10px;
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: #23272a;
-	border: none;
+#btn-container {
+	display: flex;
+	gap: 40px;
 }
 
-.button:hover {
-	background-color: #23272a;
-	color: white;
+#btn-container div {
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 30px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.6rem;
+	gap: 10px;
+}
+
+#btn-container div:hover {
+	cursor: pointer;
+	background-color: lightblue;
+	text-shadow: 1px 1px black;
+}
+
+i {
+	font-size: 2.2rem;
+}
+
+#round-result {
+	margin-top: 20px;
+	font-style: italic;
+}
+
+#game-results {
+	display: flex;
+	gap: 40px;
+	font-size: 1.5rem;
+}
+
+#game-results span {
+	color: red;
 }
 
 footer {
